@@ -11,37 +11,6 @@ body {
     padding: 0;
 }
 
-
-
-
-#nils {
-    object-fit: fill;
-
-}
-#logo {
-    text-align: left;
-}
-#familyname {
-    text-align: center;
-    color: #90d0a5;
-}
-
-#PrincipalTitle{
-    color: #242F40;
-    font-size: 5em;
-}
-#SecondaryTitle {
-    color: #242F40;
-    font-size: 2em;
-    font-weight: 800;
-}
-#passion{
-    color: #FF6542;
-}
-
-#cyber{
-    color: #06AED5;
-}
 header {
     padding: 10px 0;
 }
@@ -116,6 +85,7 @@ nav ul li a:hover {
 .responsive nav ul {
     display: flex;
 }
+
 .content-container {
     display: flex;
     flex-direction: row;
@@ -131,15 +101,58 @@ nav ul li a:hover {
     align-items: center;
 }
 
+
+
 .LandingPicture {
     flex: 1;
-    overflow: visible;
 
 }
 
 #photodemoi {
     width: 100%;
     height: 100%;
-    object-fit: contain;
-    background: #06AED5;
+}
+
+#logo {
+    text-align: left;
+}
+#familyname {
+    text-align: center;
+    color: #90d0a5;
+}
+
+#PrincipalTitle{
+    color: #242F40;
+    font-size: 5em;
+    margin-left: 10%;
+    margin-top: 30%;
+}
+.SecondaryTitle {
+    color: #242F40;
+    font-size: 2em;
+    font-weight: 800;
+    margin-left: 10%;
+}
+
+.SecondaryTitle2 {
+    color: #242F40;
+    font-size: 2em;
+    font-weight: 800;
+}
+
+#cyber{
+    color: #06AED5;
+}
+
+
+.wrapperWritter{
+    display: flex;
+    width   : 150%;
+    margin-left: 10%;
+    align-items: baseline;
+}
+
+#app {
+    font-size: 2em;
+    margin-left: 1%;
 }
