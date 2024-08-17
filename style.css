@@ -1,0 +1,145 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #EFEFEF;
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#0965C0", endColorstr="#C53A94", GradientType=1);
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+#nils {
+    object-fit: fill;
+
+}
+#logo {
+    text-align: left;
+}
+#familyname {
+    text-align: center;
+    color: #90d0a5;
+}
+
+#PrincipalTitle{
+    color: #242F40;
+    font-size: 5em;
+}
+#SecondaryTitle {
+    color: #242F40;
+    font-size: 2em;
+    font-weight: 800;
+}
+#passion{
+    color: #FF6542;
+}
+
+#cyber{
+    color: #06AED5;
+}
+header {
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-right: 50px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li.logo {
+    margin-right: auto;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 50px;
+}
+
+nav ul li a {
+    color: #242F40;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 17px;
+    padding: 5px 15px;
+    transition: color 0.5s ease, border 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #FF6542;
+    border: 2px solid #FF6542;
+    padding: 5px 15px; /* Gardez le même padding */
+    font-weight: 400;
+}
+
+.icon {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    .icon {
+        display: inline;
+        color: rgb(255, 255, 255);
+        font-size: 30px;
+        cursor: pointer;
+        margin: 0.5em;
+    }
+}
+
+.responsive {
+    position: relative;
+}
+
+.responsive nav ul {
+    display: flex;
+}
+.content-container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100%;
+    
+
+}
+
+.text-container {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.LandingPicture {
+    flex: 1;
+    overflow: visible;
+
+}
+
+#photodemoi {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background: #06AED5;
+}

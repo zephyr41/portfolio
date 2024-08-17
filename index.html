@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO NILS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <span class="icon" onclick="toggleMenu()"><i class="fa fa-bars"></i></span>
+            <nav>
+                <ul id="menu">
+                    <li class="logo">Nils <span id="familyname">Jaudon</span></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Mes projets</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">A propos de moi</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="content-container">
+        <div class="text-container">
+            <h1 id="PrincipalTitle">Nils Jaudon</h1>
+            <h2 id="SecondaryTitle">étudiant en <span id="cyber">cybersécurité</span></h2>
+        </div>
+        <div class="LandingPicture">
+            <img src="moi.png" alt="Portrait de Nils Jaudon"  id="photodemoi">
+        </div>
+    </div>
+
+
+    <script>
+        function toggleMenu() {
+            var x = document.getElementById("menu");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
