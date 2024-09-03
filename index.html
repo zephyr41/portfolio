@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
 </head>
 <body>
@@ -16,7 +17,7 @@
             <span class="icon" onclick="toggleMenu()"><i class="fa fa-bars"></i></span>
             <nav>
                 <ul id="menu">
-                    <li class="logo">Nils <span id="familyname">Jaudon</span></li>
+                    <li class="logo">Nils <span class="familyname">Jaudon</span></li>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="portfolio.html">Mes projets</a></li>
                     <li><a href="contact.html">Contact</a></li>
@@ -29,22 +30,20 @@
 
     <div class="content-container">
         <div class="text-container">
-            <h1 id="PrincipalTitle">Nils Jaudon</h1>
-            <h2 class="SecondaryTitle">étudiant en <span id="cyber">cybersécurité</span> <br> je possède de grande qualités  </h2>
+            <h1 id="PrincipalTitle">Nils <span class="familyname"> Jaudon</span></h1>
+            <h2 class="SecondaryTitle">étudiant en <span id="cyber">cybersécurité</span>  je possède de grandes qualités  </h2>
             
         
                 <div class="wrapperWritter">
-                    <h2 class="SecondaryTitle2">je suis un </h2>
+                    <h2 class="SecondaryTitle2">je suis un futur </h2>
                     <div id="app"></div>
                     <script src="script.js"></script>
                 </div>
         </div>
         <div class="LandingPicture">
-            <img src="moi.png" alt="Portrait de Nils Jaudon"  id="photodemoi">
+            <img src="images/moi.png" alt="Portrait de Nils Jaudon"  id="photodemoi">
         </div>
     </div>
-
-
     <script>
         function toggleMenu() {
             var x = document.getElementById("menu");
@@ -55,5 +54,121 @@
             }
         }
     </script>
+
+<ul class="MyProject">
+    <li class="projectItem">
+        <div class="numberProject">30 +</div>
+        <p class="defproject">Projets programmations</p>
+    </li>
+    <li class="projectItem">
+        <div class="numberProject">10 +</div>
+        <p class="defproject">Projets Infrastructures & réseaux</p>
+    </li>
+</ul>
+
+<section class="timelineZone">
+    
+<div class="timeline-container" id="timeline-1">
+    <div class="timeline-header">
+      <h2 class="timeline-header__title">Une vie d'étudiant en informatique</h2>
+      <h3 class="timeline-header__subtitle">Qui suis je ? </h3>
+    </div>
+    <div class="timeline">
+        <div class="timeline-item" data-text="QUI SUIS JE ? ">
+            <div class="timeline__content"><img class="timeline__img" src="/images/moi.png"/>
+              <h2 class="timeline__content-title"> MOI </h2>
+              <p class="timeline__content-desc">Bonjour ! Je suis Nils, 20 ans, étudiant en troisième année de cybersécurité à Montpellier Ynov Campus. En alternance chez Nepting, j'applique mes compétences en sécurité informatique.
+
+                Après un Baccalauréat Professionnel en Gestion d’Entreprise dans le secteur canin et félin, j'ai décidé de me réorienter vers l'informatique, une passion qui m'a conduit à la cybersécurité, un domaine essentiel et en pleine expansion.
+                
+                </p>
+                <li class="link"><a class="link2" href="https://www.linkedin.com/feed/update/urn:li:activity:7202654828756357120/">Mon CV</a></li>
+            </div>
+          </div>
+
+          <div class="timeline-header">
+            <h2 class="timeline-header__title">Mes projets de 2022 à 2024</h2>
+            <h3 class="timeline-header__subtitle">Infrastructure, Réseaux, Programmation</h3>
+          </div>
+      <div class="timeline-item" data-text="BOT DISCORD (YBUDDY)">
+        <div class="timeline__content"><img class="timeline__img" src="https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/635b114317d3dc3fae9b2564_Community%20-%202-p-2600.png"/>
+          <h2 class="timeline__content-title"> 2022</h2>
+          <p class="timeline__content-desc">Programmation Bot Discord en JavaScript à l'aide de discord.js
+            Programmation d'un bot Discord en JavaScript en utilisant la bibliothèque discord.js pour administrer le serveur Discord d'Ynov Campus. Le bot automatise des tâches complexes, comme la création et la suppression de channels, de rôles, et la gestion des permissions. Il gère également l'attribution automatique des rôles et l'accès aux salons spécifiques. De plus, le bot vérifie l'authenticité des utilisateurs en envoyant un email de confirmation et en validant le code reçu, garantissant ainsi une sécurité renforcée et une gestion simplifiée du serveur.</p>
+            <li class="link"><a class="link2" href="https://github.com/zephyr41/Ybuddy">Lien du projet</a></li>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="N3RD MYTHOLOG1">
+        <div class="timeline__content"><img class="timeline__img" src="/images/n3rd.jpg"/>
+          <h2 class="timeline__content-title">Juin 2022</h2>
+          <p class="timeline__content-desc">N3RD MYTHOLOG1 est un forum développé dans le cadre d'un projet de programmation. Réalisé en HTML5, CSS, JavaScript, Golang, et MySQL, ce projet a été particulièrement important pour moi. Il m'a permis de concevoir un site internet complet avec une base de données, une gestion des cookies (pour les clients et les administrateurs), ainsi que des fonctionnalités telles que la création de comptes utilisateurs, la publication de posts, et la gestion des commentaires. De plus, j'ai pu gérer un serveur backend avec Golang. Ce projet m'a donné des bases solides en développement web et en logique de programmation, qui ont été essentielles à ma seconde année  </p>
+          <li class="link"><a class="link2" href="https://github.com/YanisseIsmaili/FORUM">Lien du projet</a></li>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="Pile ELK">
+        <div class="timeline__content"><img class="timeline__img" src="https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"/>
+          <h2 class="timeline__content-title">2022</h2>
+          <p class="timeline__content-desc">Dans le cadre de mon projet Infra sur l'année 2022  j'ai mis en place une solution pour l'analyse et la remontée des logs SSH en utilisant la pile ELK (Elasticsearch, Logstash, Kibana), déployée via Docker. L'objectif était d'améliorer la surveillance et la sécurité des accès SSH sur une machine. La centralisation des logs permet une meilleure analyse des accès SSH, tandis que la détection des activités anormales aide à identifier les connexions suspectes. Grâce à des dashboards interactifs dans Kibana.</p>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="SIWHITE">
+        <div class="timeline__content"><img class="timeline__img" src="images/siwhite.png"/>
+          <h2 class="timeline__content-title">2023</h2>
+          <p class="timeline__content-desc">En 2022, Clément Garçia fonde SI WHITE, que je rejoins en tant que Vice-Président. L'association de cybersécurité a rapidement gagné en notoriété, atteignant 150 000 vues et plus de 6 000 abonnés. Nous jouons un rôle clé dans la sensibilisation et la formation du public sur les enjeux de cybersécurité à travers les réseaux sociaux, avec pour objectif de promouvoir les meilleures pratiques et d’assurer une protection efficace contre les menaces numériques.
+          </p>
+          <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@siwhite.corp" data-unique-id="siwhite.corp" data-embed-type="creator" style="max-width: 780px; min-width: 288px;" > <section> <a target="_blank" href="https://www.tiktok.com/@siwhite.corp?refer=creator_embed">@siwhite.corp</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+          
+          <li class="link"><a class="link2" href="https://github.com/YanisseIsmaili/FORUM">Nos vidéos</a></li>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="Infrastructure & réseaux">
+        <div class="timeline__content"><img class="timeline__img" src="https://c4.wallpaperflare.com/wallpaper/77/154/473/server-room-lights-dark-wallpaper-preview.jpg"/>
+          <h2 class="timeline__content-title">2023 - 2024</h2>
+          <p class="timeline__content-desc">J'ai réalisé divers projets en infrastructure, incluant la création et la configuration de : <br>GLPI sur une pile LAMP <br> pfsense <br>reverse-proxy <br> honeypot <br> windows Server… <br>ect... <br>ce qui m'a permis d'acquérir des connaissances approfondies en protocoles réseaux et communication et déploiements de machines.</p>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="devil scrap">
+        <div class="timeline__content"><img class="timeline__img" src="https://i.ytimg.com/vi/r2Gd7BtE0i0/maxresdefault.jpg"/>
+          <h2 class="timeline__content-title">2024</h2>
+          <p class="timeline__content-desc">
+            J'ai réalisé un projet ambitieux de web scraping en utilisant un Digispark, que j'ai intégré à un script Python développé avec Selenium et Beautiful Soup. L'objectif était de démontrer les risques de sécurité liés aux gestionnaires de mots de passe. Une fois branché, le Digispark récupère les informations du gestionnaire de mots de passe, extrait et casse les hashs pour obtenir les identifiants. Il utilise ensuite ces identifiants pour se connecter automatiquement aux comptes victimes (comme Instagram et GitHub) afin de collecter les conversations privées (photos, vidéos, messages), les publications, les commentaires, ainsi que les dépôts GitHub. Les données sont ensuite extraites dans un fichier zip, le tout en moins de 30 secondes. Ce projet me permet de souligner l'importance cruciale de ne jamais laisser un ordinateur déverrouillé lors de mes futures conférences.</p>
+            <li class="link"><a class="link2" href="">démo</a></li>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="Hackaton">
+        <div class="timeline__content"><img class="timeline__img" src="https://wallpapercave.com/wp/wp7970819.jpg"/>
+          <h2 class="timeline__content-title">2024</h2>
+          <p class="timeline__content-desc">
+            j’ai participé a plusieurs hackaton (Cycom 2024, Seala hackaton…) je réalise aussi des Bugs Bounty sur yes we hack, je me forme sur HackTheBox, TryhackMe. je réalise aussi divers projets sur la cyber
+            Création d’un rogueAP, arp poisonning, proxy-Transparent…
+            
+            </p>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="Stage Mike Sylla">
+        <div class="timeline__content"><img class="timeline__img" src="images/mikebackground.jpeg"/>
+          <h2 class="timeline__content-title">2024</h2>
+          <p class="timeline__content-desc">
+            j'ai réalisé un stage de 3 mois dans l'entreprise Bailfail Dream, Mike sylla Grand Couturier à crée une équipe pour promouvoir son site internet, j'ai été dans ce stage développeur web pour la conception et la mise en place du projet.
+          </p>
+          <li class="link"><a class="link2" href="">site internet</a></li>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="Nepting">
+        <div class="timeline__content"><img class="timeline__img" src="images/nepting.png"/>
+          <h2 class="timeline__content-title">2024</h2>
+          <p class="timeline__content-desc">je vais en septembre rejoindre <a>nepting</a> pour une alternance en cybersécurité, Boite spécialiser dans le paiments en ligne je vais y mener divers missions, Red teaming, Blue Team...</p>
+          <li class="link"><a class="link2" href="">nepting.comé</a></li>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+      <script src="index.js"></script>
+  
+</section>
 </body>
 </html>
+
+
+<!-- https://codepen.io/lshah/pen/bGWboER -->
