@@ -100,8 +100,9 @@
                 <div class="article-row">
                     <div class="article-col article-col-1">
                         <p>J'ai d'abord divisé le projet en 2 étapes : comment je récolte mes données et comment j'obtiens les mots de passe ? Pour faire du web scraping sur des sites connus, cela n'a pas été une mince affaire. Par exemple, Instagram obfusque le code de la page. <br> class=ldazjdlkzaj (non ce n'est pas le chat qui marche sur le clavier, c'est un bout du code de la page d'Instagram)</p>
-                        <img src="https://i.ytimg.com/vi/r2Gd7BtE0i0/maxresdefault.jpg" alt="Image" class="img-fluid">
+                        <img src="images/instagram_code_source.png" alt="Image" class="img-fluid">
                         <figure>
+                            <h2>Mon cerveau chauffe</h2>
                             <div style="width:100%;height:0;padding-bottom:100%;position:relative;">
                                 <iframe src="https://giphy.com/embed/LyJ6KPlrFdKnK" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
                             </div>
@@ -116,8 +117,13 @@
                     </div>
             
                     <div class="article-col article-col-3">
-                        <p>Bien, je pourrais essayer de déchiffrer le code, mais cela prendrait une éternité, et je n'ai pas une éternité pour mon projet. Si les éléments de la page sont incompréhensibles, il y a toujours des éléments récurrents au même endroit. J'ai donc analysé et compris ce que signifiaient ces éléments pour que Selenium puisse cliquer sur eux (par exemple, pour entrer le mot de passe). J'ai répété l'opération jusqu'à trouver les éléments qui m'intéressaient : entrer le mot de passe, nom d'utilisateur, se connecter, puis une fois connecté, accéder aux messages privés et les télécharger. Cette étape était la plus simple car j'ai simplement récupéré tout le code source de la page et donc les messages privés.</p>
+                        <p>Je ne fournirai pas de code source pour cet outil, car il peut être dangereux s'il est mal utilisé. Le développement a été long et fastidieux, avec environ 60 heures de travail investies. Cet outil fonctionne avec divers sites, dont GitHub, mais je tiens à rappeler que ce projet est absolument interdit et condamnable. Il a été réalisé dans un but purement éducatif, sur un compte personnel qui a été supprimé par la suite. Le risque associé à l'utilisation de cet outil peut aller jusqu'à 50 000 € d'amende et 3 ans d'emprisonnement. J'ai publié une vidéo YouTube à ce sujet, accessible au public, pour expliquer rapidement le processus tout en soulignant ces avertissements.
+                            Pour clarifier, j'ai analysé les éléments récurrents sur les pages web afin de permettre à Selenium d'interagir correctement avec eux (comme entrer le mot de passe). J'ai répété cette opération jusqu'à ce que je puisse identifier les éléments nécessaires pour se connecter, accéder aux messages privés, et les télécharger. La récupération des informations s'est ensuite faite en copiant directement le code source de la page.</p>
+                            
+                            <p>Je prépare une vidéo beaucoup plus professionnelle et poussé sur cette outil (environ 15 minutes) pour détailler concretement le processus et les enjeux. Restez prudents et informés des lois en vigueur.</p>
+
                     </div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/E2FOls7be-Q?si=dPAo4QHXOpY8fJWf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
             
