@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>Nils - L'aléatoire en Informatique</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Nils</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+            <li class="nav-item"><a href="index.html#home-section" class="nav-link"><span>Accueil</span></a></li>
+	          <li class="nav-item"><a href="index.html#about-section" class="nav-link"><span>A Propos</span></a></li>
+	          <li class="nav-item"><a href="index.html#projects-section" class="nav-link"><span>Mes Projets</span></a></li>
+	          <li class="nav-item"><a href="index.html#blog-section" class="nav-link"><span>Articles</span></a></li>
+			  <li class="nav-item"><a href="index.html#blog-section" class="nav-link"><span>Contexte et présentation de l’entreprise</span></a></li>
+	          <li class="nav-item"><a href="index.html#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section class="hero-wrap js-fullheight" style="background-image: url(https://media.licdn.com/dms/image/v2/C4D12AQEJA313mFtdhw/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1576775375352?e=2147483647&v=beta&t=1Ei_JKm3YSUGWM_P4_ni50udcQZ6MVF6spuiKlJxdqA);" data-stellar-background-ratio="0.5">
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-center">
+            <div class="col-md-12 ftco-animate pb-5 mb-3 text-center">
+              <h1 class="mb-3 bread">L'aléatoire en informatique n'existe pas</h1>
+              <h2>Pourquoi l'aléatoire n'existe pas et ce qu'il faut utiliser à la place</h2>
+              <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Accueil <i class="ion-ios-arrow-forward"></i></a></span> <span class="mr-2"><a href="blog.html">Blog <i class="ion-ios-arrow-forward"></i></a></span> <span>L'aléatoire en informatique <i class="ion-ios-arrow-forward"></i></span></p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="ftco-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 ftco-animate">
+              <h2 class="mb-3">L'aléatoire en informatique n'existe pas</h2>
+              <p>En informatique, le concept d'aléatoire est souvent mal compris. En réalité, ce que nous appelons « aléatoire » est généralement le résultat de processus déterministes qui produisent des séquences difficiles à prévoir. Les générateurs de nombres aléatoires sont en fait des algorithmes déterministes, appelés générateurs de nombres pseudo-aléatoires (PRNGs), qui utilisent une valeur initiale, ou graine, pour produire une séquence de nombres qui semble aléatoire mais qui est entièrement prévisible si la graine est connue.</p>
+      
+              <h3>Pourquoi l'aléatoire n'existe pas réellement</h3>
+              <p>Les générateurs de nombres pseudo-aléatoires reposent sur des algorithmes mathématiques pour créer des séquences de nombres qui semblent aléatoires. Bien que ces séquences soient suffisamment complexes pour qu'elles apparaissent comme imprévisibles, elles sont en réalité entièrement déterminées par leur graine initiale. Cela signifie que si vous connaissez la graine, vous pouvez prédire la séquence entière de nombres générés.</p>
+      
+              <h3>Ce qu'il faut utiliser à la place : Entropie réelle</h3>
+              <p>Pour obtenir de véritables valeurs aléatoires, il est nécessaire de se tourner vers des sources d'entropie physique, telles que le bruit thermique, les fluctuations quantiques ou les événements naturels. Ces sources sont fondamentalement imprévisibles et fournissent des valeurs qui ne peuvent pas être reproduites par des algorithmes déterministes. Un exemple de source d'entropie physique est l'effet d'une tempête solaire sur les systèmes électroniques, qui peut introduire des perturbations aléatoires dans les mesures.</p>
+      
+              <h3>Les dangers d'une fausse aléa</h3>
+              <p>Utiliser des générateurs de nombres pseudo-aléatoires dans des contextes critiques, comme le chiffrement ou la génération de clés de sécurité, peut entraîner des vulnérabilités importantes. Si la graine utilisée pour générer les nombres est compromise ou prévisible, un attaquant peut reproduire la séquence de nombres et déchiffrer des données sensibles. Par exemple, si un système utilise un PRNG pour générer des clés de chiffrement, une faiblesse dans l'algorithme ou une mauvaise gestion des graines peut compromettre la sécurité des communications.</p>
+      
+              <p>En résumé, bien que le concept d'aléatoire soit essentiel dans de nombreux domaines de l'informatique, il est crucial de comprendre que l'aléatoire « parfait » n'existe pas en pratique. En utilisant des sources d'entropie physique et en comprenant les limitations des générateurs de nombres pseudo-aléatoires, nous pouvons améliorer la robustesse et la sécurité des systèmes informatiques.</p>
+      
+              <div class="tag-widget post-tag-container mb-5 mt-5">
+                <div class="tagcloud">
+                  <a href="#" class="tag-cloud-link">Tech</a>
+                  <a href="#" class="tag-cloud-link">Cyber</a>
+                  <a href="#" class="tag-cloud-link">Informatique</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+            
+
+    <div class="sidebar-box ftco-animate">
+      <h3 class="heading-sidebar">Article récent</h3>
+      <div class="block-21 mb-4 d-flex">
+        <a class="blog-img mr-4" style="background-image: url(https://img-c.udemycdn.com/course/750x422/1067496_1f49_3.jpg);"></a>
+        <div class="text">
+          <h3 class="heading"><a href="#">récupérer vos identifiants sur votre réseaux wifi</a></h3>
+          <div class="meta">
+            <div><a href="#"><span class="icon-calendar"></span> 3 Juin 2024</a></div>
+            <div><a href="#"><span class="icon-person"></span> Nils</a></div>
+            <div><a href="#"><span class="icon-chat"></span> 0</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="block-21 mb-4 d-flex">
+        <a class="blog-img mr-4" style="background-image: url(https://m.media-amazon.com/images/M/MV5BNzZhNDc3OTItOWJmZi00OTMyLWE4OGQtMjg2NDNlNjk4ZTYxXkEyXkFqcGc@._V1_.jpg);"></a>
+        <div class="text">
+          <h3 class="heading"><a href="#">L’aléatoire en informatique n’existe pas
+          </a></h3>
+          <div class="meta">
+            <div><a href="#"><span class="icon-calendar"></span> 10 september 2024</a></div>
+            <div><a href="#"><span class="icon-person"></span> Nils</a></div>
+            <div><a href="#"><span class="icon-chat"></span> 0</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="block-21 mb-4 d-flex">
+        <a class="blog-img mr-4" style="background-image: url(https://lejournal.cnrs.fr/sites/default/files/styles/visuel_principal/public/assets/images/cryptoquantique_vp_298230212.jpg);"></a>
+        <div class="text">
+          <h3 class="heading"><a href="#">Le Chiffrement Quantique</a></h3>
+          <div class="meta">
+            <div><a href="#"><span class="icon-calendar"></span> 4 septembre 2024</a></div>
+            <div><a href="#"><span class="icon-person"></span> Nils</a></div>
+            <div><a href="#"><span class="icon-chat"></span> 0</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+</section> <!-- .section -->
+
+
+<footer class="ftco-footer ftco-section">
+<div class="container">
+<div class="row mb-5">
+  <div class="col-md">
+    <div class="ftco-footer-widget mb-4">
+      <h2 class="ftco-heading-2">Note</h2>
+      <p>Tout les articles présentant des failles de sécurités ou des méthodes d'attaques, sont purement à des fins éducatives et n'engage en rien la responsabilité de l'auteur de l'article</p>
+      <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+        <li class="ftco-animate"><a href="#"><span class="icon-github"></span></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="col-md">
+    <div class="ftco-footer-widget mb-4 ml-md-4">
+      <h2 class="ftco-heading-2">Liens</h2>
+      <ul class="list-unstyled">
+        <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Accueil</a></li>
+        <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>A propos</a></li>
+        <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Mes Projets</a></li>
+        <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Articles</a></li>
+        <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Présentation Entreprise</a></li>
+        <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="col-md">
+    <div class="ftco-footer-widget mb-4">
+      <h2 class="ftco-heading-2">Une Questions?</h2>
+      <div class="block-23 mb-3">
+        <ul>
+          <li><a href="#"><span class="icon icon-envelope"></span><span class="text">nils.jaudon@gmx.com</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12 text-center">
+
+    <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+  </div>
+</div>
+</div>
+</footer>
+
+
+
+<!-- loader -->
+<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-migrate-3.0.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/jquery.animateNumber.min.js"></script>
+<script src="js/scrollax.min.js"></script>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
