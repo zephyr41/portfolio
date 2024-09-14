@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>Nils - honey-pot</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Nils</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+            <li class="nav-item"><a href="index.html#home-section" class="nav-link"><span>Accueil</span></a></li>
+	          <li class="nav-item"><a href="index.html#about-section" class="nav-link"><span>A Propos</span></a></li>
+	          <li class="nav-item"><a href="index.html#projects-section" class="nav-link"><span>Mes Projets</span></a></li>
+	          <li class="nav-item"><a href="index.html#blog-section" class="nav-link"><span>Articles</span></a></li>
+			  <li class="nav-item"><a href="index.html#blog-section" class="nav-link"><span>Contexte et présentation de l’entreprise</span></a></li>
+	          <li class="nav-item"><a href="index.html#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section class="hero-wrap js-fullheight" style="background-image: url('https://www.strongdm.com/hubfs/what-is-a-honeypot-cyber-security.png');" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-center">
+          <div class="col-md-12 ftco-animate pb-5 mb-3 text-center">
+            <h1 class="mb-3 bread" style="color: rgb(72, 255, 0); text-shadow: 1px 3px black;">Honeypot</h1>
+
+            <h2 style="color: rgb(72, 255, 0); text-shadow: 1px 3px black;">Pieger des hackeurs</h2>
+            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Accueil <i class="ion-ios-arrow-forward"></i></a></span> <span class="mr-2"><a href="blog.html">Blog <i class="ion-ios-arrow-forward"></i></a></span> <span>honey-pot <i class="ion-ios-arrow-forward"></i></span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 ftco-animate">
+                <h2 class="mb-3">Pourquoi utiliser un honeypot ?</h2>
+                <p>Un honeypot est un dispositif de sécurité conçu pour attirer et piéger les cyberattaquants en simulant un système vulnérable. Contrairement à d'autres solutions de défense, un honeypot n'est pas conçu pour prévenir les attaques directement, mais plutôt pour les observer, collecter des informations précieuses sur les techniques d'attaque et permettre d'améliorer les systèmes de sécurité en fonction des menaces réelles rencontrées.</p>
+                <p>En cybersécurité, il est essentiel de détecter les intrusions avant qu'elles ne causent des dommages. Un honeypot permet d'identifier les méthodes utilisées par les attaquants, d'analyser les failles qu'ils exploitent et d'améliorer la sécurité globale des systèmes en conséquence.</p>
+                
+                <h2 class="mb-3 mt-5">Mise en place d'un honeypot sur Ubuntu</h2>
+                <p>Dans le cadre de mon projet de première année, j'ai choisi d'installer un honeypot open-source, <strong>Cowrie</strong>, sur une machine Ubuntu pour simuler un serveur SSH vulnérable. Cowrie est un honeypot SSH qui émule un shell interactif permettant aux attaquants de se connecter et d'exécuter des commandes. Cela me permettait de capturer les actions des attaquants, telles que les tentatives de login ou d'exécution de commandes malveillantes.</p>
+                <p>Le honeypot était configuré pour écouter sur le port SSH et enregistrer tous les événements et interactions. L'objectif principal était d'observer les tentatives d'attaques par force brute et de comprendre les méthodes utilisées par les attaquants pour compromettre les serveurs SSH.</p>
+                
+                <h2 class="mb-3 mt-5">Exemple de mise en place :</h2>
+                <p>Après avoir installé <strong>Cowrie</strong> sur un serveur Ubuntu, voici un exemple des logs collectés lorsque des attaquants tentaient de se connecter au honeypot :</p>
+                <ul>
+                    <li><strong>Tentatives de connexion</strong> : Captures des tentatives de connexion SSH avec des noms d'utilisateur et mots de passe incorrects, révélant des attaques par force brute.</li>
+                    <li><strong>Commandes exécutées</strong> : Une fois la connexion établie, Cowrie a enregistré les commandes que les attaquants tentaient d'exécuter, comme des tentatives de téléchargement de logiciels malveillants ou des scans de réseau.</li>
+                    <li><strong>Comportement des attaquants</strong> : Les logs ont permis de suivre le comportement des attaquants, leurs méthodes d'attaque, et de comprendre leur objectif final (prise de contrôle, exfiltration de données, etc.).</li>
+                </ul>
+                
+                <p>Grâce à ce projet, j'ai pu non seulement comprendre le fonctionnement d'un honeypot, mais aussi analyser en profondeur les menaces qui pèsent sur les systèmes SSH. Cette expérience a renforcé mes compétences en cybersécurité et m'a permis de mieux appréhender les stratégies de défense à adopter contre les attaques réelles.</p>
+                
+              <div class="tag-widget post-tag-container mb-5 mt-5">
+                <div class="tagcloud">
+                  <a href="#" class="tag-cloud-link">Tech</a>
+                  <a href="#" class="tag-cloud-link">Cyber</a>
+                  <a href="#" class="tag-cloud-link">Informatique</a>
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+            
+            
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+            <div class="sidebar-box ftco-animate">
+              <h3 class="heading-sidebar">Article récent</h3>
+              <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url(https://img-c.udemycdn.com/course/750x422/1067496_1f49_3.jpg);"></a>
+                <div class="text">
+                  <h3 class="heading"><a href="#">récupérer vos identifiants sur votre réseaux wifi</a></h3>
+                  <div class="meta">
+                    <div><a href="#"><span class="icon-calendar"></span> 3 Juin 2024</a></div>
+                    <div><a href="#"><span class="icon-person"></span> Nils</a></div>
+                    <div><a href="#"><span class="icon-chat"></span> 0</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url(https://m.media-amazon.com/images/M/MV5BNzZhNDc3OTItOWJmZi00OTMyLWE4OGQtMjg2NDNlNjk4ZTYxXkEyXkFqcGc@._V1_.jpg);"></a>
+                <div class="text">
+                  <h3 class="heading"><a href="#">L’aléatoire en informatique n’existe pas
+                  </a></h3>
+                  <div class="meta">
+                    <div><a href="#"><span class="icon-calendar"></span> 10 september 2024</a></div>
+                    <div><a href="#"><span class="icon-person"></span> Nils</a></div>
+                    <div><a href="#"><span class="icon-chat"></span> 0</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url(https://lejournal.cnrs.fr/sites/default/files/styles/visuel_principal/public/assets/images/cryptoquantique_vp_298230212.jpg);"></a>
+                <div class="text">
+                  <h3 class="heading"><a href="#">Le Chiffrement Quantique</a></h3>
+                  <div class="meta">
+                    <div><a href="#"><span class="icon-calendar"></span> 4 septembre 2024</a></div>
+                    <div><a href="#"><span class="icon-person"></span> Nils</a></div>
+                    <div><a href="#"><span class="icon-chat"></span> 0</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section> <!-- .section -->
+		
+
+    <footer class="ftco-footer ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Note</h2>
+              <p>Tout les articles présentant des failles de sécurités ou des méthodes d'attaques, sont purement à des fins éducatives et n'engage en rien la responsabilité de l'auteur de l'article</p>
+              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                <li class="ftco-animate"><a href="#"><span class="icon-github"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-4">
+              <h2 class="ftco-heading-2">Liens</h2>
+              <ul class="list-unstyled">
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Accueil</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>A propos</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Mes Projets</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Articles</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Présentation Entreprise</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2">Une Questions?</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">nils.jaudon@gmx.com</span></a></li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+
+            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
