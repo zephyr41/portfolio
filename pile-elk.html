@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <title>Nils - devil-scrap</title>
+    <title>Nils - Pile ELK</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -56,173 +56,209 @@
         </div>
       </div>
     </section>
-
     <section class="ftco-section">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 ftco-animate">
-              <h2 class="mb-3">Une Pile ELK ? </h2>
-              <p>ELK est un acronyme pour Elasticsearch, Logstash et Kibana, trois outils logiciels open source qui, lorsqu'ils sont utilisés ensemble, forment la stack ELK. Cette combinaison est couramment utilisée pour la gestion des journaux (log management), l'analyse de données, et la surveillance en temps réel. Voici une présentation détaillée de chacun des composants :</p>
-                <p class="mb-3">en détail : </p>
-                <li><strong>Elasticsearch</strong>
-                    <p>Elasticsearch est un moteur de recherche et d'analyse distribué, rapide et flexible, reposant sur Apache Lucene. Il est particulièrement adapté à l'indexation et à la recherche de grandes quantités de données, notamment des journaux, documents ou métriques non structurés.</p>
-                </li>
-                <li><strong>Logstash</strong>
-                    <p>Logstash est un outil dédié au traitement des flux de données. Il collecte des informations issues de diverses sources (journaux, bases de données, API, etc.), les transforme et les transmet vers des systèmes comme Elasticsearch.</p>
-                    <ul>
-                        <li><strong>Collecte des données</strong> : Logstash peut centraliser les journaux en provenance de multiples systèmes grâce à son support pour une grande variété de sources.</li>
-                        <li><strong>Transformation des données</strong> : Il utilise des filtres pour modifier ou enrichir les données, par exemple en parsant des fichiers JSON ou en anonymisant des informations sensibles.</li>
-                        <li><strong>Flexibilité</strong> : Logstash permet à la fois d’ingérer des données depuis plusieurs sources et de les envoyer vers diverses destinations (Elasticsearch, bases de données, fichiers, etc.).</li>
-                        <li><strong>Plugins</strong> : De nombreux plugins sont disponibles pour personnaliser les transformations, la gestion des entrées et des sorties, rendant l’outil particulièrement adaptable.</li>
-                    </ul>
-                </li>
-                <li><strong>Kibana</strong>
-                    <p>Kibana est une interface utilisateur destinée à la visualisation des données indexées dans Elasticsearch. C'est un outil puissant pour créer des tableaux de bord interactifs et analyser les données en temps réel.</p>
-                    <ul>
-                        <li><strong>Visualisation des données</strong> : Kibana permet de générer des graphiques interactifs tels que des barres, des camemberts ou des cartes de chaleur, à partir des données présentes dans Elasticsearch.</li>
-                        <li><strong>Tableaux de bord</strong> : L'outil permet de créer des tableaux de bord personnalisés pour suivre en temps réel les performances, les journaux et autres métriques.</li>
-                        <li><strong>Exploration des logs</strong> : Kibana offre une interface permettant de consulter et analyser en profondeur les logs collectés.</li>
-                        <li><strong>Alerting et monitoring</strong> : Il est possible de configurer des alertes basées sur des conditions spécifiques, facilitant ainsi la surveillance proactive.</li>
-                    </ul>
-                </li>
-                
-                <h2 class="mb-3 mt-5">La mise en place :</h2>
 
-<h2 class="mb-3 mt-5">Deux ordinateurs :</h2>
-
-<p>Dans le cadre de mon projet de première année, j'ai travaillé sur la mise en place d'une solution de surveillance des logs SSH à l'aide de la stack ELK déployée via Docker. Le projet impliquait l'utilisation de deux ordinateurs distincts : l'un pour servir de serveur SSH et collecter les logs, et l'autre pour héberger la stack ELK, composée d'Elasticsearch, Logstash et Kibana.</p>
-
-<p>Le but de ce projet était de centraliser et analyser les logs SSH, en particulier pour détecter les tentatives d'authentification échouées. J'ai configuré Logstash avec un filtre spécifique qui permettait de remonter uniquement les échecs d'authentification SSH, ce qui nous a permis d'isoler ces événements critiques pour l'analyse.</p>
-
-<p>Bien que la remontée des logs fonctionnait parfaitement, avec les données traitées et indexées correctement dans Elasticsearch, j'ai rencontré des difficultés avec Kibana. Malgré les efforts pour visualiser les logs via des tableaux de bord interactifs, je n'ai pas réussi à obtenir les graphiques attendus. Ce problème a marqué un des défis de ce projet. Néanmoins, cette expérience a été incroyablement enrichissante, car elle m'a permis de me familiariser avec Docker, la stack ELK et les processus de filtrage et d'analyse des logs en temps réel.</p>
-
-<p>Ce projet, bien qu'un peu ambitieux pour une première année, m'a permis d'acquérir des compétences cruciales et de mieux comprendre les enjeux de la cybersécurité. Grâce à cette expérience, j'ai pu appréhender la complexité des systèmes de surveillance de logs et l'importance de leur mise en place pour la sécurité des infrastructures.</p>
-
-              <div class="tag-widget post-tag-container mb-5 mt-5">
-                <div class="tagcloud">
-                  <a href="#" class="tag-cloud-link">Tech</a>
-                  <a href="#" class="tag-cloud-link">Cyber</a>
-                  <a href="#" class="tag-cloud-link">Informatique</a>
-                </div>
-              </div>
-          </div>
-        </div>
-      </section>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-            <div class="sidebar-box ftco-animate">
-              <h3 class="heading-sidebar">Article récent</h3>
-              <div class="block-21 mb-4 d-flex">
-                <a class="blog-img mr-4" style="background-image: url(https://img-c.udemycdn.com/course/750x422/1067496_1f49_3.jpg);"></a>
-                <div class="text">
-                  <h3 class="heading"><a href="#">récupérer vos identifiants sur votre réseaux wifi</a></h3>
-                  <div class="meta">
-                    <div><a href="#"><span class="icon-calendar"></span> 3 Juin 2024</a></div>
-                    <div><a href="#"><span class="icon-person"></span> Nils</a></div>
-                    <div><a href="#"><span class="icon-chat"></span> 0</a></div>
-                  </div>
-                </div>
-              </div>
-              <div class="block-21 mb-4 d-flex">
-                <a class="blog-img mr-4" style="background-image: url(https://m.media-amazon.com/images/M/MV5BNzZhNDc3OTItOWJmZi00OTMyLWE4OGQtMjg2NDNlNjk4ZTYxXkEyXkFqcGc@._V1_.jpg);"></a>
-                <div class="text">
-                  <h3 class="heading"><a href="#">L’aléatoire en informatique n’existe pas
-                  </a></h3>
-                  <div class="meta">
-                    <div><a href="#"><span class="icon-calendar"></span> 10 september 2024</a></div>
-                    <div><a href="#"><span class="icon-person"></span> Nils</a></div>
-                    <div><a href="#"><span class="icon-chat"></span> 0</a></div>
-                  </div>
-                </div>
-              </div>
-              <div class="block-21 mb-4 d-flex">
-                <a class="blog-img mr-4" style="background-image: url(https://lejournal.cnrs.fr/sites/default/files/styles/visuel_principal/public/assets/images/cryptoquantique_vp_298230212.jpg);"></a>
-                <div class="text">
-                  <h3 class="heading"><a href="#">Le Chiffrement Quantique</a></h3>
-                  <div class="meta">
-                    <div><a href="#"><span class="icon-calendar"></span> 4 septembre 2024</a></div>
-                    <div><a href="#"><span class="icon-person"></span> Nils</a></div>
-                    <div><a href="#"><span class="icon-chat"></span> 0</a></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-        </div>
-      </div>
-    </section> <!-- .section -->
-		
-
-    <footer class="ftco-footer ftco-section">
       <div class="container">
-        <div class="row mb-5">
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Note</h2>
-              <p>Tout les articles présentant des failles de sécurités ou des méthodes d'attaques, sont purement à des fins éducatives et n'engage en rien la responsabilité de l'auteur de l'article</p>
-              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-                <li class="ftco-animate"><a href="#"><span class="icon-github"></span></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4 ml-md-4">
-              <h2 class="ftco-heading-2">Liens</h2>
-              <ul class="list-unstyled">
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Accueil</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>A propos</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Mes Projets</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Articles</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Présentation Entreprise</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4">
-            	<h2 class="ftco-heading-2">Une Questions?</h2>
-            	<div class="block-23 mb-3">
-	              <ul>
-	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">nils.jaudon@gmx.com</span></a></li>
-	              </ul>
-	            </div>
-            </div>
-          </div>
+      
+      <div class="row">
+      
+      <div class="col-lg-8 ftco-animate">
+      
+      <h2 class="mb-3">Une Pile ELK ? </h2>
+      
+      <p>Que veut dire ELK ? C'est tout simplement Elasticsearch, Logstash et Kibana, trois outils open source qui sont utilisés ensemble. Ils forment la stack (ou pile) ELK. Cette suite d'outil est couramment utilisée pour la gestion des journaux, l'analyse, surveillance et traitement des données en temps réel. Les voici en détails :</p>
+      
+      <p class="mb-3">en détail : </p>
+      
+      <li><strong>Elasticsearch</strong>
+      
+      <p>Elasticsearch est un moteur de recherche et d'analyse. Il est extrêmement rapide et flexible. Il est particulièrement adapté pour la recherche dans de grandes quantités de données, notamment des logs (c'est parfait du coup)</p>
+      
+      </li>
+      
+      <li><strong>Logstash</strong>
+      
+      <p>Logstash est un outil pour le traitement des flux de données. Il collecte des informations de diverses sources (journaux, bdd, API, etc.), ils les transforment et les transmet vers des systèmes comme Elasticsearch.</p>
+      
+      <ul>
+      
+      <li><strong>Collecte des données</strong> : Logstash peut centraliser des logs de plusieurs sources</li>
+      
+      <li><strong>Transformation des données</strong> : Il utilise des filtres pour modifier ou enrichir les données, par exemple en parsant des fichiers JSON ou en anonymisant des informations sensibles.</li>
+      
+      <li><strong>Flexibilité</strong> : Logstash permet à la fois d’ingérer des données depuis plusieurs sources et de les envoyer vers diverses destinations (Elasticsearch, bases de données, fichiers, etc.).</li>
+      
+      <li><strong>Plugins</strong> : De nombreux plugins sont disponibles pour personnaliser les transformations (un peu comme des extensions pour votre navigateur :) ), la gestion des entrées et des sorties, rend l’outil particulièrement adaptable et puissant.</li>
+      
+      </ul>
+      
+      </li>
+      
+      <li><strong>Kibana</strong>
+      
+      <p>Kibana, c'est la partie graphique. Elle possède une interface utilisateur pour visualiser des données remontés depuis Elasticsearch. C'est un outil puissant pour créer des tableaux de bord interactifs et analyser les données en temps réel.</p>
+      
+      <ul>
+      
+      <li><strong>Visualisation des données</strong> : Kibana permet de générer des graphiques interactifs tels que des barres, camemberts... à partir des données fournit par Elasticsearch.</li>
+      
+      <li><strong>Tableaux de bord</strong> : L'outil permet de créer des tableaux de bord personnalisés pour suivre en temps réel les performances, les journaux et autres métriques (ce qui permet de detecter de nombreux problèmes).</li>
+      
+      <li><strong>Exploration des logs</strong> : Kibana offre une interface permettant de consulter et d'analyser en profondeur les logs collectés.</li>
+      
+      <li><strong>Alerting et monitoring</strong> : Il est possible de configurer des alertes basées sur des conditions spécifiques, facilitant ainsi la surveillance proactive.</li>
+      
+      </ul>
+      
+      </li>
+      
+      
+      
+      <h2 class="mb-3 mt-5">La mise en place :</h2>
+      
+      
+      
+      <h2 class="mb-3 mt-5">Deux ordinateurs :</h2>
+      
+      
+      
+      <p>Lors de ma première année, j'ai travaillé sur la mise en place d'une solution de surveillance (un SIEM) pour des logs SSH. Grace donc à slack ELK déployée via Docker. Le projet implique : l'utilisation de deux ordinateurs distincts : l'un pour servir de serveur SSH et collecter les logs, et l'autre pour héberger la stack ELK.</p>
+      
+      
+      
+      <p>Le but de ce projet est de centraliser et d'analyser des logs SSH, Pour détecter les tentatives d'intrusion (brute force ssh par exemple). J'ai donc configuré Logstash avec un filtre qui remonte uniquement les échecs d'authentification SSH </p>
+      
+      
+      
+      <p> La remontée des logs fonctionne parfaitement. Cependant j'ai rencontré des difficultés avec Kibana :/ . Malgré de nombreux efforts pour visualiser les logs via des tableaux de bord, je n'ai pas réussi à faire marcher la solution kibana. Ce problème a marqué un des défis de ce projet. Cette expérience a été incroyablement enrichissante, car elle m'a permis de me familiariser avec Docker, la slack ELK et les processus de filtrage et d'analyse des logs en temps réel.</p>
+      
+      <h1>Conclusion</h1>
+      
+      <p>Ce projet, bien qu'un peu ambitieux pour une première année, m'a permis d'acquérir des compétences cruciales et de mieux comprendre les enjeux de la cybersécurité. Grâce à cette expérience, j'ai pu appréhender la complexité des systèmes de surveillance de logs et l'importance de leur mise en place pour la sécurité des infrastructures.</p>
+            
+      <div class="tag-widget post-tag-container mb-5 mt-5">
+        <div class="tagcloud">
+            <a href="#" class="tag-cloud-link">Wifi</a>
+            <a href="#" class="tag-cloud-link">Pentest</a>
+            <a href="#" class="tag-cloud-link">Sécurité</a>
         </div>
-        <div class="row">
-          <div class="col-md-12 text-center">
+    </div>
+</div>
+</div>
 
-            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-          </div>
-        </div>
-      </div>
-    </footer>
-    
-  
+<section>
+<div class="sidebar-box ftco-animate">
+<h3 class="heading-sidebar">Article récent</h3>
+<div class="block-21 mb-4 d-flex">
+<a class="blog-img mr-4" style="background-image: url('https://thecyberpatch.com/content/images/2020/11/hack-your-own-wi-fi_neon-wi-fi_keyboard_hacker-100791531-large.jpg');"></a>
+<div class="text">
+<h3 class="heading"><a href="empoisonnement-arp.html">empoisonnement-arp</a></h3>
+<div class="meta">
+<div><a href="empoisonnement-arp.html"><span class="icon-calendar"></span> 3 Juin 2024</a></div>
+<div><a href="empoisonnement-arp.html"><span class="icon-person"></span> Nils</a></div>
+<div><a href="empoisonnement-arp.html"><span class="icon-chat"></span> 0</a></div>
+</div>
+</div>
+</div>
+<div class="block-21 mb-4 d-flex">
+<a class="blog-img mr-4" style="background-image: url(https://m.media-amazon.com/images/M/MV5BNzZhNDc3OTItOWJmZi00OTMyLWE4OGQtMjg2NDNlNjk4ZTYxXkEyXkFqcGc@._V1_.jpg);"></a>
+<div class="text">
+<h3 class="heading"><a href="random_informatique.html">L’aléatoire en informatique n’existe pas
+</a></h3>
+<div class="meta">
+<div><a href="random_informatique.html"><span class="icon-calendar"></span> 10 september 2024</a></div>
+<div><a href="random_informatique.html"><span class="icon-person"></span> Nils</a></div>
+<div><a href="random_informatique.html"><span class="icon-chat"></span> 0</a></div>
+</div>
+</div>
+</div>
+<div class="block-21 mb-4 d-flex">
+<a class="blog-img mr-4" style="background-image: url('https://lejournal.cnrs.fr/sites/default/files/styles/visuel_principal/public/assets/images/cryptoquantique_vp_298230212.jpg');"></a>
+<div class="text">
+<h3 class="heading"><a href="chiffrement-quantique.html">Le Chiffrement Quantique</a></h3>
+<div class="meta">
+<div><a href="chiffrement-quantique.html"><span class="icon-calendar"></span> 4 septembre 2024</a></div>
+<div><a href="chiffrement-quantique.html"><span class="icon-person"></span> Nils</a></div>
+<div><a href="chiffrement-quantique.html"><span class="icon-chat"></span> 0</a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section> <!-- .section -->
 
-  <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+<footer class="ftco-footer ftco-section">
+<div class="container">
+<div class="row mb-5">
+<div class="col-md">
+<div class="ftco-footer-widget mb-4">
+<h2 class="ftco-heading-2">Note</h2>
+<p>Tout les articles présentant des failles de sécurités ou des méthodes d'attaques, sont purement à des fins éducatives et n'engage en rien la responsabilité de l'auteur de l'article</p>
+<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+<li class="ftco-animate"><a href="https://github.com/zephyr41"><span class="icon-github"></span></a></li>
+<li class="ftco-animate"><a href="https://www.linkedin.com/in/nils-jaudon/"><span class="icon-linkedin"></span></a></li>
+</ul>
+</div>
+</div>
+<div class="col-md">
+<div class="ftco-footer-widget mb-4 ml-md-4">
+<h2 class="ftco-heading-2">Liens</h2>
+<ul class="list-unstyled">
+<li><a href="index.html"><span class="icon-long-arrow-right mr-2"></span>Accueil</a></li>
+<li><a href="index.html"><span class="icon-long-arrow-right mr-2"></span>A propos</a></li>
+<li><a href="index.html"><span class="icon-long-arrow-right mr-2"></span>Mes Projets</a></li>
+<li><a href="index.html"><span class="icon-long-arrow-right mr-2"></span>Articles</a></li>
+<li><a href="index.html"><span class="icon-long-arrow-right mr-2"></span>Présentation Entreprise</a></li>
+<li><a href="index.html"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
+</ul>
+</div>
+</div>
+<div class="col-md">
+<div class="ftco-footer-widget mb-4">
+<h2 class="ftco-heading-2">Une Questions?</h2>
+<div class="block-23 mb-3">
+<ul>
+<li><a href="#"><span class="icon icon-envelope"></span><span class="text">nils.jaudon@gmx.com</span></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12 text-center">
+
+<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+</div>
+</div>
+</div>
+</footer>
 
 
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/scrollax.min.js"></script>
-  
-  <script src="js/main.js"></script>
-    
-  </body>
+
+<!-- loader -->
+<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-migrate-3.0.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/jquery.animateNumber.min.js"></script>
+<script src="js/scrollax.min.js"></script>
+
+<script src="js/main.js"></script>
+
+</body>
 </html>
+                
+           

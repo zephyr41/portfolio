@@ -44,91 +44,125 @@
 	      </div>
 	    </div>
 	  </nav>
-	  <section class="hero-wrap js-fullheight" style="background: black;" data-stellar-background-ratio="0.5">
-        <div class="overlay"></div>
-        <div class="container">
-          <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-center">
-            <div class="col-md-12 ftco-animate pb-5 mb-3 text-center">
-              <h1 class="mb-3 bread">L'aléatoire en informatique n'existe pas</h1>
-              <h2>Pourquoi l'aléatoire n'existe pas et ce qu'il faut utiliser à la place</h2>
-              <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Accueil <i class="ion-ios-arrow-forward"></i></a></span> <span class="mr-2"><a href="blog.html">Blog <i class="ion-ios-arrow-forward"></i></a></span> <span>L'aléatoire en informatique <i class="ion-ios-arrow-forward"></i></span></p>
-            </div>
-          </div>
-        </div>
-      </section>
-      
-      <section class="ftco-section">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 ftco-animate">
-              <h2 class="mb-3">L'aléatoire en informatique n'existe pas</h2>
-              <p>En informatique, le concept d'aléatoire est souvent mal compris. En réalité, ce que nous appelons « aléatoire » est généralement le résultat de processus déterministes qui produisent des séquences difficiles à prévoir. Les générateurs de nombres aléatoires sont en fait des algorithmes déterministes, appelés générateurs de nombres pseudo-aléatoires (PRNGs), qui utilisent une valeur initiale, ou graine, pour produire une séquence de nombres qui semble aléatoire mais qui est entièrement prévisible si la graine est connue.</p>
-      
-              <h3>Pourquoi l'aléatoire n'existe pas réellement</h3>
-              <p>Les générateurs de nombres pseudo-aléatoires reposent sur des algorithmes mathématiques pour créer des séquences de nombres qui semblent aléatoires. Bien que ces séquences soient suffisamment complexes pour qu'elles apparaissent comme imprévisibles, elles sont en réalité entièrement déterminées par leur graine initiale. Cela signifie que si vous connaissez la graine, vous pouvez prédire la séquence entière de nombres générés.</p>
-      
-              <h3>Ce qu'il faut utiliser à la place : Entropie réelle</h3>
-              <p>Pour obtenir de véritables valeurs aléatoires, il est nécessaire de se tourner vers des sources d'entropie physique, telles que le bruit thermique, les fluctuations quantiques ou les événements naturels. Ces sources sont fondamentalement imprévisibles et fournissent des valeurs qui ne peuvent pas être reproduites par des algorithmes déterministes. Un exemple de source d'entropie physique est l'effet d'une tempête solaire sur les systèmes électroniques, qui peut introduire des perturbations aléatoires dans les mesures.</p>
-      
-              <h3>Les dangers d'une fausse aléa</h3>
-              <p>Utiliser des générateurs de nombres pseudo-aléatoires dans des contextes critiques, comme le chiffrement ou la génération de clés de sécurité, peut entraîner des vulnérabilités importantes. Si la graine utilisée pour générer les nombres est compromise ou prévisible, un attaquant peut reproduire la séquence de nombres et déchiffrer des données sensibles. Par exemple, si un système utilise un PRNG pour générer des clés de chiffrement, une faiblesse dans l'algorithme ou une mauvaise gestion des graines peut compromettre la sécurité des communications.</p>
-      
-              
-      
-              <h3>Conclusion</h3>
-              <p>En résumé, bien que le concept d'aléatoire soit essentiel dans de nombreux domaines de l'informatique, il est crucial de comprendre que l'aléatoire « parfait » n'existe pas en pratique. En utilisant des sources d'entropie physique et en comprenant les limitations des générateurs de nombres pseudo-aléatoires, nous pouvons améliorer la robustesse et la sécurité des systèmes informatiques.</p>
-              <div class="tag-widget post-tag-container mb-5 mt-5">
-                <div class="tagcloud">
-                  <a href="#" class="tag-cloud-link">Tech</a>
-                  <a href="#" class="tag-cloud-link">Cyber</a>
-                  <a href="#" class="tag-cloud-link">Informatique</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
-            
-
-    <div class="sidebar-box ftco-animate">
-      <h3 class="heading-sidebar">Article récent</h3>
-      <div class="block-21 mb-4 d-flex">
-        <a class="blog-img mr-4" style="background-image: url(https://img-c.udemycdn.com/course/750x422/1067496_1f49_3.jpg);"></a>
-        <div class="text">
-          <h3 class="heading"><a href="#">récupérer vos identifiants sur votre réseaux wifi</a></h3>
-          <div class="meta">
-            <div><a href="#"><span class="icon-calendar"></span> 3 Juin 2024</a></div>
-            <div><a href="#"><span class="icon-person"></span> Nils</a></div>
-            <div><a href="#"><span class="icon-chat"></span> 0</a></div>
+	  <section class="hero-wrap js-fullheight" style="position: relative;" data-stellar-background-ratio="10.5">
+      <!-- Flou de l'image de fond -->
+      <div class="background-blur" style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url(https://static.scientificamerican.com/sciam/cache/file/6284F581-96A1-4D49-9F1B9F22EA328189_source.jpg?w=1200);
+        background-size: cover;
+        background-position: center;
+        filter: blur(5px);
+        z-index: 1;
+      "></div>
+    
+      <!-- Texte net et contenu -->
+      <div class="container" style="position: relative; z-index: 2;">
+        <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-center">
+          <div class="col-md-12 ftco-animate pb-5 mb-3 text-center">
+            <h1 class="mb-3 bread">L'aléatoire en informatique n'existe pas</h1>
+            <h2>Pourquoi l'aléatoire n'existe pas et ce qu'il faut utiliser à la place</h2>
+            <p class="breadcrumbs">
+              <span class="mr-2"><a href="index.html">Accueil <i class="ion-ios-arrow-forward"></i></a></span> 
+              <span class="mr-2"><a href="blog.html">Blog <i class="ion-ios-arrow-forward"></i></a></span> 
+              <span>L'aléatoire en informatique <i class="ion-ios-arrow-forward"></i></span>
+            </p>
           </div>
         </div>
       </div>
-      <div class="block-21 mb-4 d-flex">
-        <a class="blog-img mr-4" style="background-image: url(https://m.media-amazon.com/images/M/MV5BNzZhNDc3OTItOWJmZi00OTMyLWE4OGQtMjg2NDNlNjk4ZTYxXkEyXkFqcGc@._V1_.jpg);"></a>
-        <div class="text">
-          <h3 class="heading"><a href="#">L’aléatoire en informatique n’existe pas
-          </a></h3>
-          <div class="meta">
-            <div><a href="#"><span class="icon-calendar"></span> 10 september 2024</a></div>
-            <div><a href="#"><span class="icon-person"></span> Nils</a></div>
-            <div><a href="#"><span class="icon-chat"></span> 0</a></div>
-          </div>
+    </section>
+    
+      
+    <section class="ftco-section">
+
+      <div class="container">
+      
+      <div class="row">
+      
+      <div class="col-lg-8 ftco-animate">
+      
+      <h2 class="mb-3">L'aléatoire en informatique n'existe pas</h2>
+      
+      <p>En informatique, l'aléatoire est souvent mal compris. En réalité, « l'aléatoire » est le résultat de processus complexes qui produisent des séquences difficiles à prévoir. Les générateurs de nombres aléatoires sontdes algorithmes (PRNGs). Ceux-ci utilisent une valeur initiale, ou graine ( une Seed, comme dans Minecraft), pour produire une séquence de nombres qui semble aléatoire, mais qui est entièrement prévisible si la graine est connue. (c'est pour ça que vous pouvez mettre une seed spéciale dans un monde Minecraft pour avoir le même monde que votre collègue</p>
+      
+      
+      
+      <h3>Pourquoi l'aléatoire n'existe pas réellement alors ?</h3>
+      
+      <p>Ces algorithmes reposent sur des séquences mathématiques. pour la faire courte : créer des séquences de nombres qui paraissent aléatoires. Mais ces séquences sont suffisamment complexes pour qu'elles apparaissent comme imprévisibles (on peut utiliser le temps de compilation pour définir quelque chose d'aléatoire par exemple, vu qu'il ne sera pas forcément le même à chaque fois). Elles sont en réalité entièrement déterminées par une seed ou le temps de compilation. Donc si vous connaissez la seed, vous pouvez prédire la séquence entière de nombres générés.</p>
+      
+      
+      
+      <h3>Ce qu'il faut utiliser à la place : L'Entropie réelle</h3>
+      
+      <p>Pour obtenir de véritables valeurs aléatoires, il est nécessaire de se tourner vers des sources physiques, telles que le bruit (des ondes), ou les événements naturels (bien connu par exemple ce sont les tempêtes solaires). Ces sources sont imprévisibles et fournissent des valeurs qui ne peuvent pas être reproduites par des algorithmes et qui peut donner des perturbations aléatoires dans les mesures.</p>
+      
+      
+      
+      <h3>Les dangers d'une fausse aléa</h3>
+      
+      <p>Utiliser des générateurs de nombres pseudo-aléatoires dans des contextes sensibles, comme le chiffrement ou la génération de clés de sécurité, pose des soucis de sécurité et peut entraîner des vulnérabilités critique. Si la seed pour générer les nombres est compromis ou prévisible, alors n'importe qui peut déchiffrer ou accéder aux données. Par exemple, si un système utilise un PRNG pour générer des clés de chiffrement, une faille dans l'algorithme ou une mauvaise gestion des seeds peut compromettre la sécurité du système.</p>
+      
+      
+      
+      
+      
+      
+      
+      <h3>Conclusion</h3>
+      
+      <p>En résumé, je pense que le concept d'aléatoire est essentiel dans de nombreux domaines de l'informatique, il est très important de comprendre que l'aléatoire « parfait » n'existe pas. En utilisant des sources d'entropie physique (comme le soleil ou le bruit) En comprenant bien les concepts des limitations que nous avons aujourd'hui, nous pouvons améliorer la robustesse et la sécurité des systèmes informatiques.</p>
+      <div class="tag-widget post-tag-container mb-5 mt-5">
+        <div class="tagcloud">
+            <a href="#" class="tag-cloud-link">Wifi</a>
+            <a href="#" class="tag-cloud-link">Pentest</a>
+            <a href="#" class="tag-cloud-link">Sécurité</a>
         </div>
-      </div>
-      <div class="block-21 mb-4 d-flex">
-        <a class="blog-img mr-4" style="background-image: url(https://lejournal.cnrs.fr/sites/default/files/styles/visuel_principal/public/assets/images/cryptoquantique_vp_298230212.jpg);"></a>
-        <div class="text">
-          <h3 class="heading"><a href="#">Le Chiffrement Quantique</a></h3>
-          <div class="meta">
-            <div><a href="#"><span class="icon-calendar"></span> 4 septembre 2024</a></div>
-            <div><a href="#"><span class="icon-person"></span> Nils</a></div>
-            <div><a href="#"><span class="icon-chat"></span> 0</a></div>
-          </div>
-        </div>
-      </div>
     </div>
+</div>
+</div>
+
+<section>
+<div class="sidebar-box ftco-animate">
+<h3 class="heading-sidebar">Article récent</h3>
+<div class="block-21 mb-4 d-flex">
+<a class="blog-img mr-4" style="background-image: url('https://thecyberpatch.com/content/images/2020/11/hack-your-own-wi-fi_neon-wi-fi_keyboard_hacker-100791531-large.jpg');"></a>
+<div class="text">
+<h3 class="heading"><a href="empoisonnement-arp.html">empoisonnement-arp</a></h3>
+<div class="meta">
+<div><a href="empoisonnement-arp.html"><span class="icon-calendar"></span> 3 Juin 2024</a></div>
+<div><a href="empoisonnement-arp.html"><span class="icon-person"></span> Nils</a></div>
+<div><a href="empoisonnement-arp.html"><span class="icon-chat"></span> 0</a></div>
+</div>
+</div>
+</div>
+<div class="block-21 mb-4 d-flex">
+<a class="blog-img mr-4" style="background-image: url(https://m.media-amazon.com/images/M/MV5BNzZhNDc3OTItOWJmZi00OTMyLWE4OGQtMjg2NDNlNjk4ZTYxXkEyXkFqcGc@._V1_.jpg);"></a>
+<div class="text">
+<h3 class="heading"><a href="random_informatique.html">L’aléatoire en informatique n’existe pas
+</a></h3>
+<div class="meta">
+<div><a href="random_informatique.html"><span class="icon-calendar"></span> 10 september 2024</a></div>
+<div><a href="random_informatique.html"><span class="icon-person"></span> Nils</a></div>
+<div><a href="random_informatique.html"><span class="icon-chat"></span> 0</a></div>
+</div>
+</div>
+</div>
+<div class="block-21 mb-4 d-flex">
+<a class="blog-img mr-4" style="background-image: url('https://lejournal.cnrs.fr/sites/default/files/styles/visuel_principal/public/assets/images/cryptoquantique_vp_298230212.jpg');"></a>
+<div class="text">
+<h3 class="heading"><a href="chiffrement-quantique.html">Le Chiffrement Quantique</a></h3>
+<div class="meta">
+<div><a href="chiffrement-quantique.html"><span class="icon-calendar"></span> 4 septembre 2024</a></div>
+<div><a href="chiffrement-quantique.html"><span class="icon-person"></span> Nils</a></div>
+<div><a href="chiffrement-quantique.html"><span class="icon-chat"></span> 0</a></div>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </section> <!-- .section -->
@@ -137,46 +171,47 @@
 <footer class="ftco-footer ftco-section">
 <div class="container">
 <div class="row mb-5">
-  <div class="col-md">
-    <div class="ftco-footer-widget mb-4">
-      <h2 class="ftco-heading-2">Note</h2>
-      <p>Tout les articles présentant des failles de sécurités ou des méthodes d'attaques, sont purement à des fins éducatives et n'engage en rien la responsabilité de l'auteur de l'article</p>
-      <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-        <li class="ftco-animate"><a href="#"><span class="icon-github"></span></a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="col-md">
-    <div class="ftco-footer-widget mb-4 ml-md-4">
-      <h2 class="ftco-heading-2">Liens</h2>
-      <ul class="list-unstyled">
-        <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Accueil</a></li>
-        <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>A propos</a></li>
-        <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Mes Projets</a></li>
-        <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Articles</a></li>
-        <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Présentation Entreprise</a></li>
-        <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="col-md">
-    <div class="ftco-footer-widget mb-4">
-      <h2 class="ftco-heading-2">Une Questions?</h2>
-      <div class="block-23 mb-3">
-        <ul>
-          <li><a href="#"><span class="icon icon-envelope"></span><span class="text">nils.jaudon@gmx.com</span></a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
+<div class="col-md">
+<div class="ftco-footer-widget mb-4">
+<h2 class="ftco-heading-2">Note</h2>
+<p>Tout les articles présentant des failles de sécurités ou des méthodes d'attaques, sont purement à des fins éducatives et n'engage en rien la responsabilité de l'auteur de l'article</p>
+<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+<li class="ftco-animate"><a href="https://github.com/zephyr41"><span class="icon-github"></span></a></li>
+<li class="ftco-animate"><a href="https://www.linkedin.com/in/nils-jaudon/"><span class="icon-linkedin"></span></a></li>
+</ul>
+</div>
+</div>
+<div class="col-md">
+<div class="ftco-footer-widget mb-4 ml-md-4">
+<h2 class="ftco-heading-2">Liens</h2>
+<ul class="list-unstyled">
+<li><a href="index.html"><span class="icon-long-arrow-right mr-2"></span>Accueil</a></li>
+<li><a href="index.html"><span class="icon-long-arrow-right mr-2"></span>A propos</a></li>
+<li><a href="index.html"><span class="icon-long-arrow-right mr-2"></span>Mes Projets</a></li>
+<li><a href="index.html"><span class="icon-long-arrow-right mr-2"></span>Articles</a></li>
+<li><a href="index.html"><span class="icon-long-arrow-right mr-2"></span>Présentation Entreprise</a></li>
+<li><a href="index.html"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
+</ul>
+</div>
+</div>
+<div class="col-md">
+<div class="ftco-footer-widget mb-4">
+<h2 class="ftco-heading-2">Une Questions?</h2>
+<div class="block-23 mb-3">
+<ul>
+<li><a href="#"><span class="icon icon-envelope"></span><span class="text">nils.jaudon@gmx.com</span></a></li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 <div class="row">
-  <div class="col-md-12 text-center">
+<div class="col-md-12 text-center">
 
-    <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-  </div>
+</div>
 </div>
 </div>
 </footer>
@@ -204,3 +239,5 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
 </body>
 </html>
+                
+           
